@@ -17,6 +17,8 @@ JST-PH female-male pair (or similar)
 Some spare wire (28 - 24 AWG or so)
 Solder and soldering iron
 
+More in-depth tutorial coming soon...
+
 
 ## Software Prereqs
 
