@@ -1,21 +1,32 @@
 # Pi Video Streaming and Roomba Control
 
-Combines a Raspberry Pi with Pi Camera and a Roomba
+Combines a Raspberry Pi with Pi Camera and a Roomba.
+
 Drive your Roomba around with any web browser, while streaming video
 
 A mashup of https://github.com/waveform80/pistreaming and https://github.com/AtsushiSakai/PyRoombaAdapter.
 
 ## Hardware
 Raspberry Pi with a female USB-A port (eg. not a Zero or Zero W)
+
 Raspberry Pi Camera
+
 Roomba which supports the iRobot Open Interface
+
 USB-TTL dongle
+
 7-pin mini-din plug
+
 5V voltage regulator
+
 Micro USB male connector
+
 JST-PH female-male pair (or similar)
+
 Some spare wire (28 - 24 AWG or so)
+
 Solder and soldering iron
+
 
 More in-depth tutorial coming soon...
 
