@@ -7,10 +7,10 @@
 		body {
 			background: ${BGCOLOR};
 			text-align: center;
-			margin-top: 10%;
+			margin-top: 1%;
 		}
 		#videoCanvas {
-			/* Always stretch the canvas to 640x480, regardless of its
+			/* Always stretch the canvas to WIDTHxHEIGHT, regardless of its
 			internal size. */
 			width: ${WIDTH}px;
 			height: ${HEIGHT}px;
@@ -42,5 +42,34 @@
 		var client = new WebSocket('ws://' + window.location.hostname + ':${WS_PORT}/');
 		var player = new jsmpeg(client, {canvas:canvas});
 	</script>
+        <div style="width:${WIDTH}px; margin:0 auto;" >
+		<div>
+			<form action="" method="post">
+			   	<input type="submit" name="left" value="Left" style="width:25%;float:left;height:50px"/>
+			</form>
+			<form action="" method="post">
+			    	<input type="submit" name="forward" value="Forward" style="width:50%;float:left;height:50px"/>
+			</form>
+			<form action="" method="post">
+			    <input type="submit" name="right" value="Right" style="width:25%;float:left;height:50px"/>
+			</form>
+		</div>
+
+		<form action="" method="post">
+		    <input type="submit" name="halt" value="Halt" style="width:100%;height:75px"/>
+		</form>
+
+		<div>
+			<form action="" method="post">
+			   	<input type="submit" name="dock" value="Dock" style="width:25%;float:left;height:50px"/>
+			</form>
+			<form action="" method="post">
+			    	<input type="submit" name="back" value="Back" style="width:50%;float:left;height:50px"/>
+			</form>
+			<form action="" method="post">
+			    <input type="submit" name="power" value="Power" style="width:25%;float:left;height:50px"/>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
