@@ -64,18 +64,17 @@ to the console as it starts up:
 
 Now fire up your favourite web-browser and visit the address
 `http://pi-address:8082/` - it should fairly quickly start displaying the feed
-from the camera. You should be able to visit the URL from multiple browsers
-simultaneously (although obviously you'll saturate the Pi's bandwidth sooner or
-later).
+from the camera. 
 
-If you find the video stutters or the latency is particularly bad (more than a
-second), please check you have a decent network connection between the Pi and
-the clients. I've found ethernet works perfectly (even with things like
-powerline boxes in between) but a poor wifi connection doesn't provide enough
-bandwidth, and dropped packets are not handled terribly well.
+Use the buttons below the video feed to control the Roomba.
 
-To shut down the server press Ctrl+C - you may find it'll take a while
-to shut down unless you close the client web browsers (Chrome in particular
-tends to keep connections open which will prevent the server from shutting down
-until the socket closes).
+Power - power on Roomba (if you manually press the Roomba's power button, you don't need this)
+
+Forward/Back - increase/decrease Roomba's forward speed
+
+Left/Right - increase/decrease Roomba's spin rate
+
+Halt - set Roomba's speed and spin rate to 0
+
+Dock - put Roomba in docking mode
 
