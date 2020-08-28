@@ -33,7 +33,7 @@ More in-depth tutorial coming soon...
 
 ## Software Prereqs
 
-The software has been testing on a Raspberry Pi B+ running Raspbian Buster (headless, but that shouldn't matter).
+The software has been tested on a Raspberry Pi B+ running Raspbian Buster (headless, but that shouldn't matter).
 
 First make sure you've got a functioning Pi camera module (test it with
 `raspistill` to be certain). Then make sure you've got the following packages
