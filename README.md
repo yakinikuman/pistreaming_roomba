@@ -2,7 +2,7 @@
 
 Combines a Raspberry Pi with Pi Camera and a Roomba.
 
-Drive your Roomba around with any web browser, while streaming video
+Drive your Roomba around with any web browser, while streaming video.  Requires Python 3.
 
 A mashup of https://github.com/waveform80/pistreaming and https://github.com/AtsushiSakai/PyRoombaAdapter.
 
@@ -12,15 +12,13 @@ See more in-depth writeup, with pictures, at https://yakinikuman.github.io/pistr
 
 ## Software Prereqs
 
-The software has been tested on a Raspberry Pi B+ running Raspbian Buster (headless, but that shouldn't matter).
+The software has been tested on a Raspberry Pi 3B running Raspbian Buster (headless, but that shouldn't matter).
 
 First make sure you've got a functioning Pi camera module (test it with
 `raspistill` to be certain). Then make sure you've got the following packages
 installed:
 
     $ sudo apt-get install ffmpeg git python3-picamera
-
-PyRoombaAdapter:
 
     $ pip3 install pyroombaadapter ws4py
 
