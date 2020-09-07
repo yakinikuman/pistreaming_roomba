@@ -46,7 +46,7 @@ SERIAL_PORT = "/dev/ttyUSB0"
 POWER_ON_PIN = 18 # Pi GPIO
 POWER_ON_DURATION_SEC = 0.1
 SPEED_INC_MS = 0.1
-RATE_INC_DEGS = 10.0
+RATE_INC_DEGS = 5.0
 MAX_SPEED_MS = 0.5
 MIN_SPEED_MS = -0.5
 MAX_RATE_DEGS = 50.0
@@ -61,6 +61,7 @@ class PyRoomba(PyRoombaAdapter):
         super(PyRoomba, self).__init__(serial_port)
 
     def move_roomba(self):
+        self.change_mode_to_full()
         if self.roomba_speed > MAX_SPEED_MS:
             self.roomba_speed = MAX_SPEED_MS
         if self.roomba_speed < MIN_SPEED_MS:
@@ -104,7 +105,6 @@ class PyRoomba(PyRoombaAdapter):
             GPIO.output(POWER_ON_PIN, GPIO.HIGH)
             sleep(POWER_ON_DURATION_SEC)
             GPIO.output(POWER_ON_PIN, GPIO.LOW)
-            self.change_mode_to_full() #Change mode so ready for commands
 
     def get_speed(self):
         return self.roomba_speed
